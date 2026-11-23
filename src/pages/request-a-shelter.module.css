@@ -1,0 +1,47 @@
+.page {
+  padding: 3rem 0 4rem;
+}
+
+.wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.lead {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--shelter-silver);
+  border-top: 4px solid var(--evergreen);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.card ul {
+  margin-bottom: 0;
+}
+
+.card li + li {
+  margin-top: 0.35rem;
+}
+
+.note {
+  color: var(--winter-earth);
+  font-size: 0.95rem;
+  margin: 1rem 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 1.25rem;
+  }
+}

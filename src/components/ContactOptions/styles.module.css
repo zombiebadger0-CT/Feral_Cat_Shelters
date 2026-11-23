@@ -1,0 +1,18 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.buttons :global(.button) {
+  white-space: normal;
+}
+
+.disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.disabled small {
+  font-weight: 400;
+}

@@ -1,0 +1,74 @@
+/**
+ * Winter Shelter palette
+ *   Snowfall        #F5F6F3  primary background
+ *   Shelter Navy    #24334D  headings, navigation, footer
+ *   Evergreen       #405B4B  buttons, links, calls to action
+ *   Winter Sky      #AFC2D1  decorative accents, backgrounds
+ *   Shelter Silver  #A9AAA6  borders, dividers, details
+ *   Winter Earth    #6C5743  secondary headings, warm accents
+ */
+:root {
+  --snowfall: #f5f6f3;
+  --shelter-navy: #24334d;
+  --evergreen: #405b4b;
+  --winter-sky: #afc2d1;
+  --shelter-silver: #a9aaa6;
+  --winter-earth: #6c5743;
+
+  /* Infima primary = Evergreen (buttons, links, CTAs) */
+  --ifm-color-primary: #405b4b;
+  --ifm-color-primary-dark: #3a5244;
+  --ifm-color-primary-darker: #364d40;
+  --ifm-color-primary-darkest: #2d3f35;
+  --ifm-color-primary-light: #466452;
+  --ifm-color-primary-lighter: #4a6956;
+  --ifm-color-primary-lightest: #557861;
+
+  --ifm-background-color: var(--snowfall);
+  --ifm-font-color-base: var(--shelter-navy);
+  --ifm-heading-color: var(--shelter-navy);
+  --ifm-link-color: var(--evergreen);
+  --ifm-hr-background-color: var(--shelter-silver);
+  --ifm-toc-border-color: var(--shelter-silver);
+
+  --ifm-navbar-background-color: var(--shelter-navy);
+  --ifm-navbar-link-color: var(--snowfall);
+  --ifm-navbar-link-hover-color: var(--winter-sky);
+  --ifm-footer-background-color: var(--shelter-navy);
+}
+
+body {
+  background-color: var(--snowfall);
+}
+
+h2,
+h3 {
+  color: var(--shelter-navy);
+}
+
+h4,
+h5,
+h6 {
+  color: var(--winter-earth);
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 3px solid var(--winter-sky);
+}
+.navbar__title,
+.navbar__brand {
+  color: var(--snowfall);
+}
+.navbar__link--active {
+  color: var(--winter-sky);
+}
+.navbar__toggle {
+  color: var(--snowfall);
+}
+
+/* Footer */
+.footer--dark {
+  --ifm-footer-background-color: var(--shelter-navy);
+  border-top: 3px solid var(--winter-sky);
+}
