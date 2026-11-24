@@ -40,6 +40,38 @@
   margin: 1rem 0 0;
 }
 
+.hubs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.hub {
+  border: 1px solid var(--shelter-silver);
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: var(--snowfall);
+}
+
+.card li + li.hub {
+  margin-top: 0;
+}
+
+.hub h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.hub :global(.button) {
+  white-space: normal;
+}
+
+.serves {
+  margin-bottom: 0.75rem;
+}
+
 @media screen and (max-width: 600px) {
   .card {
     padding: 1.25rem;

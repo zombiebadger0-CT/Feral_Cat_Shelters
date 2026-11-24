@@ -11,9 +11,10 @@ const config = {
     v4: true,
   },
 
-  // GitHub Pages deployment config
-  url: 'https://zombiebadger0-CT.github.io',
-  baseUrl: '/Feral_Cat_Shelters/',
+  // GitHub Pages deployment config, served at the custom domain.
+  // The domain itself is also set in static/CNAME and in the repo's Pages settings.
+  url: 'https://ctcatshelters.org',
+  baseUrl: '/',
   organizationName: 'zombiebadger0-CT',
   projectName: 'Feral_Cat_Shelters',
   deploymentBranch: 'gh-pages',
@@ -31,9 +32,29 @@ const config = {
       whatsappNumber: '',
       // Texting number with country code, digits only, e.g. '18605551234'
       textNumber: '',
-      // Project email address, e.g. 'hello@yourdomain.org'
-      email: '',
+      // General project email. Also the fallback for "no hub near you / not sure".
+      email: 'info@ctcatshelters.org',
     },
+    // Pickup hubs, shown on the Request a Shelter page in this order.
+    // To add a hub, copy one entry and change it:
+    //   town:   the hub's town (the card heading)
+    //   serves: towns this hub covers, e.g. ['Bristol', 'Plainville', 'Southington'].
+    //           Leave empty [] to hide the "Serves" line.
+    //   email:  the hub's address, named for the town, not the volunteer.
+    //           Leave '' to show a greyed-out "coming soon" button.
+    // Don't add volunteers' names here: this file is public on GitHub.
+    hubs: [
+      {
+        town: 'Bristol',
+        serves: [],
+        email: 'bristol@ctcatshelters.org',
+      },
+      {
+        town: 'Glastonbury',
+        serves: [],
+        email: 'glastonbury@ctcatshelters.org',
+      },
+    ],
     // Amazon wish list link, shown on the Donate Materials page.
     amazonWishlistUrl: '',
   },

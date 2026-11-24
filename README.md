@@ -6,7 +6,7 @@ A page to help distribute feral cat shelters in CT. Built with [Docusaurus](http
 
 ```bash
 npm install
-npm start        # dev server at http://localhost:3000/Feral_Cat_Shelters/
+npm start        # dev server at http://localhost:3000/
 npm run build    # production build into ./build
 npm run serve    # preview the production build
 ```
