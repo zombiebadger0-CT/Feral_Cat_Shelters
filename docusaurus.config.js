@@ -47,12 +47,12 @@ const config = {
       {
         town: 'Bristol',
         serves: [],
-        email: 'bristol@ctcatshelters.org',
+        email: '', // bristol@ctcatshelters.org — turn on when ready for requests
       },
       {
         town: 'Glastonbury',
         serves: [],
-        email: 'glastonbury@ctcatshelters.org',
+        email: '', // glastonbury@ctcatshelters.org — turn on when ready for requests
       },
     ],
     // Amazon wish list link, shown on the Donate Materials page.
